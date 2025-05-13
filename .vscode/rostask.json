@@ -1,0 +1,30 @@
+//tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+    {
+    "label": "prerun",
+    "type": "shell",
+    "command": "source devel/setup.bash && export ROS_MASTER_URI=http://172.17.0.1:11311/ "  //这里填入你自己的rosmaster ip
+    },
+    {
+    "label": "catkin build",
+    "type": "shell",
+    "command": "catkin_make",
+    "args": [
+    "-DCMAKE_BUILD_TYPE=Debug",
+    "-DCATKIN_BLACKLIST_PACKAGES=''",
+    "-DCATKIN_WHITELIST_PACKAGES=hello_world_node",//这里填入你自己的包名
+    ],
+    "group": {
+    "kind": "build",
+    "isDefault": true
+    },
+    "presentation": {
+    "reveal": "always"
+    },
+    "problemMatcher": "$msCompile"
+    },
+    ]
+}
+    
