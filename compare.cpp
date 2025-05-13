@@ -13,7 +13,7 @@ int main(int argc, char** argv)
     } else {
         path = "/home/wz/VO-LOAM/data/1004/2021-10-04-08-52-10/camera/color/image_raw1/1633308808.948763.jpg";
     }
-    cv::Mat image1 = cv::imread("/home/cvrsg/test/testopencv/src/876588627.jpg");
+    cv::Mat image1 = cv::imread("/home/cvrsg/test/demodebug/src/876588627.jpg");
     // cv::Mat image2 = cv::imread("/home/wz/VO-LOAM/github/output/blur_good.png");
     cv::Mat diff;
     path = "test";
